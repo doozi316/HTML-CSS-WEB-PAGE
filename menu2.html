@@ -1,0 +1,131 @@
+<!-- HTML5 주석 방법 -->
+<!DOCTYPE html> <!-- HTML5 문법에 맞게 작성합니다! -->
+<html> <!-- HTML 시작 -->
+<head> <!-- 문서 정보 -->
+<meta charset="UTF-8"> <!-- 인코딩 설정(글자 깨지지 않게) -->
+<title>HTML5/CSS3 TEST SITE 입니다.</title> <!-- 제목표시줄 -->
+
+<style> /* head 태그 내에 style 태그 작성(style 태그 내에는 css 문법에 맞게 작성, 주석도~) */
+/* 사용자 정의 폰트 */
+@font-face{
+	font-family : 'SongMyung-Regular';
+	src: url('style/SongMyung-Regular.ttf');
+}
+
+</style>
+
+<!-- 외부 스타일시트 적용(head 태그 내에 link 태그 작성) -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<!-- 1. 웹폰트(link 태그를 사용한 방법) -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body> <!-- 화면에 보여지는 부분 -->
+<div id="main"> <!-- 영역 태그 -->
+
+<header> <!-- 머리글 영역 -->
+<div id="logo"> <!-- 로고 부분 -->
+	<h1>HTML5/CSS3<a href="index.html"><span class="logo_color">
+		_TEST SITE</span></a></h1> <!-- 제목태그(h1 > h6) -->
+	<h2>HTML5, CSS3를 이용한 웹 개발 테스트 사이트 입니다.</h2>
+</div>
+
+<nav> <!-- 메뉴 영역 -->
+<ul id="menu"> <!-- 순서없는 목록 -->
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="menu1.html">메뉴 1</a></li>
+	<li class="selected"><a href="menu2.html">메뉴 2</a></li>
+	<li><a href="menu3.html">메뉴 3</a></li>
+	<li><a href="menu4.html">메뉴 4</a></li>
+	<li><a href="menu5.html">메뉴 5</a></li>
+</ul>
+</nav>   
+</header> 
+
+<div id="site_content"> 
+<aside> <!-- 광고, 참조 링크 영역 -->
+<h1>최신 뉴스</h1>
+<h4>HTML5는 어떻게 활용해야하는 언어인가?</h4>
+<h5>2019-04-19</h5>
+<p> <!-- 문단 태그 -->
+웹 문서를 제작하는 데 쓰이는 기본 프로그래밍 언어 HTML의 최신규격으로 별도 설치 없이 웹브라우저 상에서 다양한 멀티미디어 콘텐츠와 
+앱 등을 바로 제공할 수 있다. 
+</p>
+<p>더 많은 정보는 <a href="https://www.naver.com">이곳</a>을 클릭하세요.</p>
+
+<h1>참조 링크</h1>
+<ul>
+	<li><a href="#">link 1</a></li>
+	<li><a href="#">link 2</a></li>
+	<li><a href="#">link 3</a></li>
+	<li><a href="#">link 4</a></li>
+</ul>
+
+<h1>기타 정보</h1>
+<p>HTML5 기타 정보입니다.</p>
+<figure> <!-- 그림을 묶어서 관리 -->
+<img src="style/img1.jpg" alt="그림1입니다." width="200"> <!-- 이미지 태그 -->
+</figure>
+</aside> 
+
+<section> <!-- article 영역을 감싸고 있는 section 영역 -->
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>웹 폰트/사용자 정의 폰트</h2>
+
+<p>
+<strong>웹 폰트</strong>는 웹 브라우저로 페이지를 읽는 순간 자동으로 글꼴 다운 받아 사용하고,
+<Strong>사용자 정의 폰트</Strong>는 @font-face 규칙을 이용하여 사용자 정의 폰트를 정의합니다.
+</p>
+
+<p class="webfont1">Web Font(웹 폰트) 1 입니다. </p>
+<p class="webfont2">Web Font(웹 폰트) 2 입니다. </p>
+<p class="webfont3">Web Font(웹 폰트) 3 입니다. </p>
+<h2>Article 1</h2>
+
+</article> 
+
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>HTML5에서 추가된 input type</h2>
+<p>HTML5에서는 input type 외에 input에 따로 속성을 지정해 줄 수 있습니다.
+placeholder를 이용하여 input에 어떤 값을 입력하는지 보여 주는 기능도 있습니다.
+</p>
+
+
+
+<form action="">
+<label>input type="color"</label><input type="color"><br>
+<label>input type="date"</label><input type="date"><br>
+<label>input type="email"</label><input type="email"><br>
+<label>input type="number"</label><input type="number" min="10" max="20"><br>
+<label>input type="range"</label><input type="range" min="0" max="100"><br>
+<label>input type="search"</label><input type="search"><br>
+<label>input type="tel"</label><input type="tel"><br>
+<label>input type="time"</label><input type="time"><br>
+<label>input type="url"</label><input type="url"><br>
+<label>input type="week"</label><input type="week"><br>
+<label>input type="datetime-local"</label><input type="datetime-local"><br>
+<label>input type="month"</label><input type="month"><br>
+
+</form>
+</article>
+  
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>Article 3</h2>
+
+</article>  
+</section>
+</div>
+
+<footer> <!-- 바닥글 영역 -->
+<p><a href="#">HOME</a> | <a href="menu1.html">메뉴1</a> | <a href="menu2.html">메뉴2</a> | 
+<a href="menu3.html">메뉴3</a> | <a href="menu4.html">메뉴4</a></p>
+<p>Copyright &copy; YURI | <a href="https://www.w3schools.com">HTML5</a> | 
+<a href="#">기타 웹표준 사이트</a></p>
+</footer>
+</div>
+
+</body>
+</html> <!-- HTML 끝 -->
+
+
+

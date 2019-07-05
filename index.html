@@ -1,0 +1,115 @@
+<!-- HTML5 주석 방법 -->
+<!DOCTYPE html> <!-- HTML5 문법에 맞게 작성합니다! -->
+<html> <!-- HTML 시작 -->
+<head> <!-- 문서 정보 -->
+<meta charset="UTF-8"> <!-- 인코딩 설정(글자 깨지지 않게) -->
+<title>HTML5/CSS3 TEST SITE 입니다.</title> <!-- 제목표시줄 -->
+
+<style> /* head 태그 내에 style 태그 작성(style 태그 내에는 css 문법에 맞게 작성, 주석도~) */
+</style>
+
+<!-- 외부 스타일시트 적용(head 태그 내에 link 태그 작성) -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body> <!-- 화면에 보여지는 부분 -->
+<div id="main"> <!-- 영역 태그 -->
+
+<header> <!-- 머리글 영역 -->
+<div id="logo"> <!-- 로고 부분 -->
+	<h1>HTML5/CSS3<a href="index.html"><span class="logo_color">
+		_TEST SITE</span></a></h1> <!-- 제목태그(h1 > h6) -->
+	<h2>HTML5, CSS3를 이용한 웹 개발 테스트 사이트 입니다.</h2>
+</div>
+
+<nav> <!-- 메뉴 영역 -->
+<ul id="menu"> <!-- 순서없는 목록 -->
+	<li class="selected"><a href="index.html">HOME</a></li>
+	<li><a href="menu1.html">메뉴 1</a></li>
+	<li><a href="menu2.html">메뉴 2</a></li>
+	<li><a href="menu3.html">메뉴 3</a></li>
+	<li><a href="menu4.html">메뉴 4</a></li>
+	<li><a href="menu5.html">메뉴 5</a></li>
+</ul>
+</nav>   
+</header> 
+
+<div id="site_content"> 
+<aside> <!-- 광고, 참조 링크 영역 -->
+<h1>최신 뉴스</h1>
+<h4>HTML5는 어떻게 활용해야하는 언어인가?</h4>
+<h5>2019-04-19</h5>
+<p> <!-- 문단 태그 -->
+웹 문서를 제작하는 데 쓰이는 기본 프로그래밍 언어 HTML의 최신규격으로 별도 설치 없이 웹브라우저 상에서 다양한 멀티미디어 콘텐츠와 
+앱 등을 바로 제공할 수 있다. 
+</p>
+<p>더 많은 정보는 <a href="https://www.naver.com">이곳</a>을 클릭하세요.</p>
+
+<h1>참조 링크</h1>
+<ul>
+	<li><a href="#">link 1</a></li>
+	<li><a href="#">link 2</a></li>
+	<li><a href="#">link 3</a></li>
+	<li><a href="#">link 4</a></li>
+</ul>
+
+<h1>기타 정보</h1>
+<p>HTML5 기타 정보입니다.</p>
+<figure> <!-- 그림을 묶어서 관리 -->
+<img src="style/img1.jpg" alt="그림1입니다." width="200"> <!-- 이미지 태그 -->
+</figure>
+</aside> 
+
+<section> <!-- article 영역을 감싸고 있는 section 영역 -->
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>Article 1</h2>
+<p>
+HTML 5는 별도 프로그램을 깔지 않아도 인터넷 브라우저상에서 화려한 그래픽 효과를 구현하며, 음악ㆍ동영상을 자유롭게 감상할 수 있는 마크업 언어(markup language)이다. 
+2004년부터 HTML 5 표준화 그룹인 <b>WHATWG(Web Hypertext Application Technology Working Group)</b>는 HTML 5를 HTML의 
+차기 핵심 표준으로 만들기 위한 세부 작업을 시작하였고, 2014년 10월 웹표준화기구 월드와이드컨소시엄(W3C)은 HTML 5을 웹표준으로 선정했다. 이에 따라 애플ㆍ마이크로소프트(MS), 구글, 페이스북 등 글로벌 IT 기업들은 HTML 5 시대 주도권을 잡기 위해 
+치열한 경쟁에 돌입하기도 했다.   
+</p>
+<p>더 많은 정보는 <a href="#">이곳</a>을 클릭하세요.</p>
+</article> 
+
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>Article 2</h2>
+<p>웹표준을 지원하는 주요 웹 브라우저 종류</p>
+<ul>
+	<li>익스플로러</li>
+	<li>크롬</li>
+	<li>사파리</li>
+	<li>오페라</li>
+	<li>파이어폭스</li>
+</ul>
+</article>
+  
+<article> <!-- 기사, 공지사항 등의 영역 -->
+<h2>Article 3</h2>
+<table> <!-- 테이블 태그 -->
+<caption>CSS3 사용 이점</caption>
+	<!-- tr: 테이블 행, th: 첫행의열제목(진하게,가운데정렬), td: 일반열내용 -->
+	<tr><th>이점</th><th>설명</th></tr> 
+	<tr><td>확장성</td><td>표현을 더욱 다양하게 확장하거나 표현 기능 변경 가능</td></tr> 
+	<tr><td>편의성</td><td>간편하게 레이아웃 등의 스타일 구성 가능</td></tr> 
+	<tr><td>재사용성</td><td>비슷한 표현 스타일을 갖는 여러 HTML 문서에 공통으로 활용 가능</td></tr> 
+	<tr><td>생산성</td><td>모듈 단위의 협업과 생산성 향상 가능</td></tr> 	
+</table>
+
+</article>  
+</section>
+</div>
+
+<footer> <!-- 바닥글 영역 -->
+<p><a href="#">HOME</a> | <a href="menu1.html">메뉴1</a> | <a href="menu2.html">메뉴2</a> | 
+<a href="menu3.html">메뉴3</a> | <a href="menu4.html">메뉴4</a></p>
+<p>Copyright &copy; YURI | <a href="https://www.w3schools.com">HTML5</a> | 
+<a href="#">기타 웹표준 사이트</a></p>
+</footer>
+</div>
+
+</body>
+</html> <!-- HTML 끝 -->
+
+
+

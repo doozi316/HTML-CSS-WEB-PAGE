@@ -1,0 +1,133 @@
+<!-- HTML5 주석 방법 -->
+<!DOCTYPE html>
+<!-- HTML5 문법에 맞게 작성합니다! -->
+<html>
+<!-- HTML 시작 -->
+<head>
+<!-- 문서 정보 -->
+<meta charset="UTF-8">
+<!-- 인코딩 설정(글자 깨지지 않게) -->
+<title>HTML5/CSS3 TEST SITE 입니다.</title>
+<!-- 제목표시줄 -->
+
+<style> /* head 태그 내에 style 태그 작성(style 태그 내에는 css 문법에 맞게 작성, 주석도~) */
+</style>
+
+<!-- 외부 스타일시트 적용(head 태그 내에 link 태그 작성) -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+	<!-- 화면에 보여지는 부분 -->
+	<div id="main">
+		<!-- 영역 태그 -->
+
+		<header>
+			<!-- 머리글 영역 -->
+			<div id="logo">
+				<!-- 로고 부분 -->
+				<h1>
+					HTML5/CSS3<a href="index.html"><span class="logo_color">
+							_TEST SITE</span></a>
+				</h1>
+				<!-- 제목태그(h1 > h6) -->
+				<h2>HTML5, CSS3를 이용한 웹 개발 테스트 사이트 입니다.</h2>
+			</div>
+
+			<nav>
+				<!-- 메뉴 영역 -->
+				<ul id="menu">
+					<!-- 순서없는 목록 -->
+					<li><a href="index.html">HOME</a></li>
+					<li  class="selected"><a href="menu1.html">메뉴 1</a></li>
+					<li><a href="menu2.html">메뉴 2</a></li>
+					<li><a href="menu3.html">메뉴 3</a></li>
+					<li><a href="menu4.html">메뉴 4</a></li>
+					<li><a href="menu5.html">메뉴 5</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="site_content">
+			<aside>
+				<!-- 광고, 참조 링크 영역 -->
+				<h1>최신 뉴스</h1>
+				<h4>HTML5는 어떻게 활용해야하는 언어인가?</h4>
+				<h5>2019-04-19</h5>
+				<p>
+					<!-- 문단 태그 -->
+					웹 문서를 제작하는 데 쓰이는 기본 프로그래밍 언어 HTML의 최신규격으로 별도 설치 없이 웹브라우저 상에서 다양한
+					멀티미디어 콘텐츠와 앱 등을 바로 제공할 수 있다.
+				</p>
+				<p>
+					더 많은 정보는 <a href="https://www.naver.com">이곳</a>을 클릭하세요.
+				</p>
+
+				<h1>참조 링크</h1>
+				<ul>
+					<li><a href="#">link 1</a></li>
+					<li><a href="#">link 2</a></li>
+					<li><a href="#">link 3</a></li>
+					<li><a href="#">link 4</a></li>
+				</ul>
+
+				<h1>기타 정보</h1>
+				<p>HTML5 기타 정보입니다.</p>
+				<figure>
+					<!-- 그림을 묶어서 관리 -->
+					<img src="style/img1.jpg" alt="그림1입니다." width="200">
+					<!-- 이미지 태그 -->
+				</figure>
+			</aside>
+
+			<section>
+				<!-- article 영역을 감싸고 있는 section 영역 -->
+				<article>
+					<h2>이미지 태그</h2>
+					<figure>
+						<img src="style/img2.jpg" width="300" height="200">
+						<figcaption>HTML5 이미지 태그 사용</figcaption>
+						<!-- 이미지들의 제목 -->
+					</figure>
+					<h5>이미지 파일 형식 : gif, jpg, png</h5>
+				</article>
+
+				<article>
+					<h2>오디오 태그</h2>
+
+					<audio src="style/bp.mp3" controls></audio>
+					<h5>오디오 파일 형식 : mp3, wav(익스플로러 x), ogg(익스플로러, 사파리x)</h5>
+
+
+
+
+				</article>
+
+				<article>
+					<h2>비디오 태그</h2>
+					<video src="style/kl.mp4" poster="style/poster.jpg" width="430" height="250" controls></video>
+					<h5>비디오 파일 형식 : mp4, webm(익스플로러, 사파리X), ogg(익스플로러, 사파리X)</h5>
+				</article>
+			</section>
+		</div>
+
+		<footer>
+			<!-- 바닥글 영역 -->
+			<p>
+				<a href="#">HOME</a> | <a href="menu1.html">메뉴1</a> | <a
+					href="menu2.html">메뉴2</a> | <a href="menu3.html">메뉴3</a> | <a
+					href="menu4.html">메뉴4</a>
+			</p>
+			<p>
+				Copyright &copy; YURI | <a href="https://www.w3schools.com">HTML5</a>
+				| <a href="#">기타 웹표준 사이트</a>
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>
+<!-- HTML 끝 -->
+
+
+
